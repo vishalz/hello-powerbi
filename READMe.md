@@ -1,48 +1,7 @@
 
 # Adventure Wroks 
 
-## Version 1.0.0 
-
-## Features 
-1. ETL Completed
-
-
-## Power BI Course Practice Steps
-
-## PowerQuery ELT Steps V1.0.0
-1. Add Parameters in Parameters group
-    1. DataFilesPath
-    1. SalesDataFilesSearchKey
-    1. CalendarStartDate and CalendarEndDate for Calendar Lookup Table
-1. Add Helper Functions Group
-    1. Add function ExtractTablesFromCSV = Function to read csv document and promote first rows to headers
-    1. Add function GenerateCalendarTable = function to generate Calendar Lookup table with start and end date as parameters
-1. Create a Column Mapping Model
-    1. Generate a table of colun names for Sales that will be included in the model. Also to map column names i.e. OrderNumber -> Order Numbe 
-1. Add a configuration Group   
-    1. Generate SalesDataColumnNamesList = Source to Destination filter List of Lists. Disable list from loading into model  
-1. Import Customer Lookup , Product Categories Lookup , Product Lookup, Product subcategories lookup and Returns Data
-    1. Fix Erorrs and remove Empty customer ids in Customer Lookup
-1. Generate Sales Data Table
-    1. Custom Query to import and combine sales data from 3 files and rename columns to mapped column names in SalesDataColumnNamesList
-1. Add Measures Table
-1. Change types of all columns in Sales Data table
-
-## Section 6 : Data Model - V1.1.0
-1. Create 1 to many relationships
-1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
-1. Convert Field Formats and Categories
-    1. Convert date formats in Calendar , Sales and Returns table to short date, 
-    1. Assign geographical categories to fields in Territory Lookup
-    1. Change currency formats in product table
-1. Hierarchies
-    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
-    1. Territory Hierarchy -> Continent->Region->Country
-1. Sort By Column
-    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
-    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
-
-## Measures - V1.2.0
+## V1.2.0 : Section 5 Calculated Fields with DAX
 1. Add Measures (steps)
     1. Basic Math, Counting, Stat Functions
         1. Quantity Sold
@@ -129,6 +88,48 @@
     1. Total Revenue
     1. Weekend Orders
     1. YTD Revenue
+
+## Version 1.2.0 Section 5 Calculated Fields with DAX
+
+
+## Version 1.1.0 Section 4 (incorrectly tagged as section 6 in git )
+1. Create 1 to many relationships
+1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
+1. Convert Field Formats and Categories
+    1. Convert date formats in Calendar , Sales and Returns table to short date, 
+    1. Assign geographical categories to fields in Territory Lookup
+    1. Change currency formats in product table
+1. Hierarchies
+    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
+    1. Territory Hierarchy -> Continent->Region->Country
+1. Sort By Column
+    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
+    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
+
+## Version 1.0.0 Section 3 Connecting And Shaping Data 
+1. Add Parameters in Parameters group
+    1. DataFilesPath
+    1. SalesDataFilesSearchKey
+    1. CalendarStartDate and CalendarEndDate for Calendar Lookup Table
+1. Add Helper Functions Group
+    1. Add function ExtractTablesFromCSV = Function to read csv document and promote first rows to headers
+    1. Add function GenerateCalendarTable = function to generate Calendar Lookup table with start and end date as parameters
+1. Create a Column Mapping Model
+    1. Generate a table of colun names for Sales that will be included in the model. Also to map column names i.e. OrderNumber -> Order Numbe 
+1. Add a configuration Group   
+    1. Generate SalesDataColumnNamesList = Source to Destination filter List of Lists. Disable list from loading into model  
+1. Import Customer Lookup , Product Categories Lookup , Product Lookup, Product subcategories lookup and Returns Data
+    1. Fix Erorrs and remove Empty customer ids in Customer Lookup
+1. Generate Sales Data Table
+    1. Custom Query to import and combine sales data from 3 files and rename columns to mapped column names in SalesDataColumnNamesList
+1. Add Measures Table
+1. Change types of all columns in Sales Data table
+
+
+
+
+
+
 
 
 ## Backup Code
