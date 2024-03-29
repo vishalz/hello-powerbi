@@ -26,9 +26,9 @@
 1. Generate Sales Data Table
     1. Custom Query to import and combine sales data from 3 files and rename columns to mapped column names in SalesDataColumnNamesList
 1. Add Measures Table
-
-## DAX model Steps - V1.1.0
 1. Change types of all columns in Sales Data table
+
+## Section 6 : Data Model - V1.1.0
 1. Create 1 to many relationships
 1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
 1. Convert Field Formats and Categories
