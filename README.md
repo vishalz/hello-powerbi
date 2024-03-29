@@ -1,47 +1,9 @@
 
 # Adventure Works
 
-## Hotfix Version 1.1.1 
-1. Changed datatype of columns in Sales table to fix errors
 
+## V1.2.0 : Section 5 Calculated Fields with DAX
 
-## Version 1.1.0 Section Creating a Data Model
-1. Create 1 to many relationships
-1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
-1. Convert Field Formats and Categories
-    1. Convert date formats in Calendar , Sales and Returns table to short date, 
-    1. Assign geographical categories to fields in Territory Lookup
-    1. Change currency formats in product table
-1. Hierarchies
-    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
-    1. Territory Hierarchy -> Continent->Region->Country
-1. Sort By Column
-    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
-    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
-
-## Version 1.0.0 : Section 3 Connecting and Shaping Data  
-
-1. Add Parameters in Parameters group
-    1. DataFilesPath
-    1. SalesDataFilesSearchKey
-    1. CalendarStartDate and CalendarEndDate for Calendar Lookup Table
-1. Add Helper Functions Group
-    1. Add function ExtractTablesFromCSV = Function to read csv document and promote first rows to headers
-    1. Add function GenerateCalendarTable = function to generate Calendar Lookup table with start and end date as parameters
-1. Create a Column Mapping Model
-    1. Generate a table of colun names for Sales that will be included in the model. Also to map column names i.e. OrderNumber -> Order Numbe 
-1. Add a configuration Group   
-    1. Generate SalesDataColumnNamesList = Source to Destination filter List of Lists. Disable list from loading into model  
-1. Import Customer Lookup , Product Categories Lookup , Product Lookup, Product subcategories lookup and Returns Data
-    1. Fix Erorrs and remove Empty customer ids in Customer Lookup
-1. Generate Sales Data Table
-    1. Custom Query to import and combine sales data from 3 files and rename columns to mapped column names in SalesDataColumnNamesList
-1. Add Measures Table
-1. Change types of all columns in Sales Data table
-
-
-## Feature backlog
-### Section 5 Calculated Fields with DAX
 1. Add Measures (steps)
     1. Basic Math, Counting, Stat Functions
         1. Quantity Sold
@@ -61,7 +23,6 @@
     1. Date functions : Year , IN 
         1. Weekend in Calendar table
         1. Birth Year in Customer Lookup table
-
     1. Related
         1. Add Revenue Column to Sales 
     1. Calculate
@@ -87,47 +48,109 @@
         1. Previous month Revenue
         1. Revenue Target
         1. 10 day rolling revenue
+        1. Previous Month Profit 
+        1. Previous Month Orders
+        1. Previous Month Returns
+        1. Order Target 
+        1. Profit Target
+        1. 90-day Rolling Profit 
+
+
+## Hotfix Version 1.1.1 
+1. Changed datatype of columns in Sales table to fix errors
+
+## Version 1.1.0 Section Creating a Data Model
+1. Create 1 to many relationships
+1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
+1. Convert Field Formats and Categories
+    1. Convert date formats in Calendar , Sales and Returns table to short date, 
+    1. Assign geographical categories to fields in Territory Lookup
+    1. Change currency formats in product table
+1. Hierarchies
+    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
+    1. Territory Hierarchy -> Continent->Region->Country
+1. Sort By Column
+    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
+    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
+
+
+## Version 1.0.0 : Section 3 Connecting and Shaping Data  
+
+1. Add Parameters in Parameters group
+    1. DataFilesPath
+    1. SalesDataFilesSearchKey
+    1. CalendarStartDate and CalendarEndDate for Calendar Lookup Table
+1. Add Helper Functions Group
+    1. Add function ExtractTablesFromCSV = Function to read csv document and promote first rows to headers
+    1. Add function GenerateCalendarTable = function to generate Calendar Lookup table with start and end date as parameters
+1. Create a Column Mapping Model
+    1. Generate a table of colun names for Sales that will be included in the model. Also to map column names i.e. OrderNumber -> Order Numbe 
+1. Add a configuration Group   
+    1. Generate SalesDataColumnNamesList = Source to Destination filter List of Lists. Disable list from loading into model  
+1. Import Customer Lookup , Product Categories Lookup , Product Lookup, Product subcategories lookup and Returns Data
+    1. Fix Erorrs and remove Empty customer ids in Customer Lookup
+1. Generate Sales Data Table
+    1. Custom Query to import and combine sales data from 3 files and rename columns to mapped column names in SalesDataColumnNamesList
+1. Add Measures Table
+1. Change types of all columns in Sales Data table
+
+
+
+## Version 1.1.0 Section 4 (incorrectly tagged as section 6 in git )
+1. Create 1 to many relationships
+1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
+1. Convert Field Formats and Categories
+    1. Convert date formats in Calendar , Sales and Returns table to short date, 
+    1. Assign geographical categories to fields in Territory Lookup
+    1. Change currency formats in product table
+1. Hierarchies
+    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
+    1. Territory Hierarchy -> Continent->Region->Country
+1. Sort By Column
+    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
+    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
+
+## Version 1.0.0 Section 3 Connecting And Shaping Data 
+1. Add Parameters in Parameters group
+    1. DataFilesPath
+    1. SalesDataFilesSearchKey
+    1. CalendarStartDate and CalendarEndDate for Calendar Lookup Table
+1. Add Helper Functions Group
+    1. Add function ExtractTablesFromCSV = Function to read csv document and promote first rows to headers
+    1. Add function GenerateCalendarTable = function to generate Calendar Lookup table with start and end date as parameters
+1. Create a Column Mapping Model
+    1. Generate a table of colun names for Sales that will be included in the model. Also to map column names i.e. OrderNumber -> Order Numbe 
+1. Add a configuration Group   
+    1. Generate SalesDataColumnNamesList = Source to Destination filter List of Lists. Disable list from loading into model  
+1. Import Customer Lookup , Product Categories Lookup , Product Lookup, Product subcategories lookup and Returns Data
+    1. Fix Erorrs and remove Empty customer ids in Customer Lookup
+1. Generate Sales Data Table
+    1. Custom Query to import and combine sales data from 3 files and rename columns to mapped column names in SalesDataColumnNamesList
+1. Add Measures Table
+1. Change types of all columns in Sales Data table
+
+
+
+## Feature Backlog 
 
 1. Add measures (All)
-    1. Sales Quanity, Returned Quanity
-    1. % of All Orders
-    1. % of All Returns
-    1. 10-day Rolling Revenue
-    1. 90-day Rolling Profit 
     1. Adjusted Price
     1. Adjusted Profit
     1. Adjusted Revenue 
-    1. All Orders
-    1. All Returns
-    1. Average Retail Price
     1. Average Revenue Per Customer
-    1. Bike Return Rate
-    1. Bike Returns
-    1. Bike Sales
-    1. Bulk Orders
     1. High Ticket Orders
-    1. Order Target 
     1. Order Target Gap
-    1. Overall Average  Price
-    1. Previous Month Orders
-    1. Previous Month Profit 
-    1. Previous Month Returns
-    1. Previous Month Revenue
-    1. Profit Target
     1. Profit Target Gap
-    1. Quantity Returned
-    1. Quantity Sold
-    1. Return Rate
     1. Revenue Target
     1. Revenue Target Gap
     1. Total Cost
-    1. Total Customers
-    1. Total Orders
     1. Total Profit
-    1. Total Returns
     1. Total Revenue
     1. Weekend Orders
     1. YTD Revenue
+
+
+
 
 
 ## Backup Code
