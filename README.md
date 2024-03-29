@@ -23,7 +23,6 @@
     1. Date functions : Year , IN 
         1. Weekend in Calendar table
         1. Birth Year in Customer Lookup table
-
     1. Related
         1. Add Revenue Column to Sales 
     1. Calculate
@@ -51,42 +50,25 @@
         1. 10 day rolling revenue
 
 1. Add measures (All)
-    1. Sales Quanity, Returned Quanity
-    1. % of All Orders
-    1. % of All Returns
     1. 10-day Rolling Revenue
     1. 90-day Rolling Profit 
     1. Adjusted Price
     1. Adjusted Profit
     1. Adjusted Revenue 
-    1. All Orders
-    1. All Returns
-    1. Average Retail Price
     1. Average Revenue Per Customer
-    1. Bike Return Rate
-    1. Bike Returns
-    1. Bike Sales
-    1. Bulk Orders
     1. High Ticket Orders
     1. Order Target 
     1. Order Target Gap
-    1. Overall Average  Price
     1. Previous Month Orders
     1. Previous Month Profit 
     1. Previous Month Returns
     1. Previous Month Revenue
     1. Profit Target
     1. Profit Target Gap
-    1. Quantity Returned
-    1. Quantity Sold
-    1. Return Rate
     1. Revenue Target
     1. Revenue Target Gap
     1. Total Cost
-    1. Total Customers
-    1. Total Orders
     1. Total Profit
-    1. Total Returns
     1. Total Revenue
     1. Weekend Orders
     1. YTD Revenue
