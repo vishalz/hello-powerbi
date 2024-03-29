@@ -48,30 +48,13 @@
         1. Previous month Revenue
         1. Revenue Target
         1. 10 day rolling revenue
+        1. Previous Month Profit 
+        1. Previous Month Orders
+        1. Previous Month Returns
+        1. Order Target 
+        1. Profit Target
+        1. 90-day Rolling Profit 
 
-1. Add measures (All)
-    1. 10-day Rolling Revenue
-    1. 90-day Rolling Profit 
-    1. Adjusted Price
-    1. Adjusted Profit
-    1. Adjusted Revenue 
-    1. Average Revenue Per Customer
-    1. High Ticket Orders
-    1. Order Target 
-    1. Order Target Gap
-    1. Previous Month Orders
-    1. Previous Month Profit 
-    1. Previous Month Returns
-    1. Previous Month Revenue
-    1. Profit Target
-    1. Profit Target Gap
-    1. Revenue Target
-    1. Revenue Target Gap
-    1. Total Cost
-    1. Total Profit
-    1. Total Revenue
-    1. Weekend Orders
-    1. YTD Revenue
 
 ## Hotfix Version 1.1.1 
 1. Changed datatype of columns in Sales table to fix errors
@@ -148,6 +131,23 @@
 
 
 
+## Feature Backlog 
+
+1. Add measures (All)
+    1. Adjusted Price
+    1. Adjusted Profit
+    1. Adjusted Revenue 
+    1. Average Revenue Per Customer
+    1. High Ticket Orders
+    1. Order Target Gap
+    1. Profit Target Gap
+    1. Revenue Target
+    1. Revenue Target Gap
+    1. Total Cost
+    1. Total Profit
+    1. Total Revenue
+    1. Weekend Orders
+    1. YTD Revenue
 
 
 
