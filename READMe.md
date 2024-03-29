@@ -1,15 +1,26 @@
 
-# Adventure Wroks 
+# Adventure Works
 
-## Version 1.0.0 
-
-## Features 
-1. ETL Completed
+## Hotfix Version 1.1.1 
+1. Changed datatype of columns in Sales table to fix errors
 
 
-## Power BI Course Practice Steps
+## Version 1.1.0 Section Creating a Data Model
+1. Create 1 to many relationships
+1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
+1. Convert Field Formats and Categories
+    1. Convert date formats in Calendar , Sales and Returns table to short date, 
+    1. Assign geographical categories to fields in Territory Lookup
+    1. Change currency formats in product table
+1. Hierarchies
+    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
+    1. Territory Hierarchy -> Continent->Region->Country
+1. Sort By Column
+    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
+    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
 
-## PowerQuery ELT Steps V1.0.0
+## Version 1.0.0 : Section 3 Connecting and Shaping Data  
+
 1. Add Parameters in Parameters group
     1. DataFilesPath
     1. SalesDataFilesSearchKey
@@ -28,21 +39,9 @@
 1. Add Measures Table
 1. Change types of all columns in Sales Data table
 
-## Section 6 : Data Model - V1.1.0
-1. Create 1 to many relationships
-1. Hide all foreign keys in Sales , Returns , Product and Product subcategory tables 
-1. Convert Field Formats and Categories
-    1. Convert date formats in Calendar , Sales and Returns table to short date, 
-    1. Assign geographical categories to fields in Territory Lookup
-    1. Change currency formats in product table
-1. Hierarchies
-    1. Date Hierarchy Start of Year , Start of Month , Start of Week, Day 
-    1. Territory Hierarchy -> Continent->Region->Country
-1. Sort By Column
-    1. Calendar Table : Columns "Month Name" and "Short Month" Sort By Column "Month"
-    1. Calendar Table : Column "Day Name" Sort By Column "Day Of Week"
 
-## Measures - V1.2.0
+## Feature backlog
+### Section 5 Calculated Fields with DAX
 1. Add Measures (steps)
     1. Basic Math, Counting, Stat Functions
         1. Quantity Sold
